@@ -1,0 +1,131 @@
+{
+  "generated_at": "20261122-162353-474018-slides-check",
+  "sources": [
+    {
+      "id": "SRC-001",
+      "original_title": "鐵路旅行 | Guide | Travel Japan - 日本觀光局（官方網站）",
+      "url": "https://www.japan.travel/en/guide/traveling-by-rail/",
+      "agency": "JNTO 日本政府觀光局",
+      "region": "common",
+      "summary": "日本鐵路網、列車類型及搭乘方式概覽。",
+      "wiki_path": "wiki/common/rail-basics.md"
+    },
+    {
+      "id": "SRC-002",
+      "original_title": "IC 旅遊卡 | 日本旅遊 | JNTO",
+      "url": "https://www.japan.travel/en/plan/ic-card/",
+      "agency": "JNTO 日本政府觀光局",
+      "region": "common",
+      "summary": "交通 IC 卡的用途與使用範圍概覽。",
+      "wiki_path": "wiki/common/ic-cards-and-tickets.md"
+    },
+    {
+      "id": "SRC-003",
+      "original_title": "How to use the trains | Central Japan Railway Company",
+      "url": "https://global.jr-central.co.jp/en/tickets/use/index.html",
+      "agency": "JR Central 東海旅客鐵道",
+      "region": "common",
+      "summary": "新幹線及一般列車票券與驗票閘門的使用方式。",
+      "wiki_path": "wiki/common/shinkansen.md"
+    },
+    {
+      "id": "SRC-004",
+      "original_title": "Rail | NARITA INTERNATIONAL AIRPORT",
+      "url": "https://www.narita-airport.jp/en/access/train/",
+      "agency": "成田國際機場株式會社",
+      "region": "kanto",
+      "summary": "成田機場 JR 與京成鐵路進站位置、主要停靠站及 N'EX 路線。",
+      "wiki_path": "wiki/regions/kanto.md"
+    },
+    {
+      "id": "SRC-005",
+      "original_title": "Useful Tickets in Tokyo - Japan National Tourism Organization",
+      "url": "https://www.japan.travel/en/au/plan/useful-tickets-tokyo/",
+      "agency": "JNTO 日本政府觀光局",
+      "region": "kanto",
+      "summary": "東京 JR、Tokyo Metro、都營地下鐵票券適用範圍概覽；票價須另查營運方。",
+      "wiki_path": "wiki/regions/kanto.md"
+    },
+    {
+      "id": "SRC-006",
+      "original_title": "JR-WEST Usage Guide from Kansai International Airport | West Japan Railway Company",
+      "url": "https://www.westjr.co.jp/global/en/travel/shopping/access/train.html",
+      "agency": "JR West 西日本旅客鐵道",
+      "region": "kansai",
+      "summary": "關西機場搭乘 HARUKA 與機場快速前往大阪、京都的資訊。",
+      "wiki_path": "wiki/regions/kansai.md"
+    },
+    {
+      "id": "SRC-007",
+      "original_title": "User Guide | Route Search | Osaka Metro",
+      "url": "https://kensaku.osakametro.co.jp/route/howto/en.html",
+      "agency": "Osaka Metro 大阪地下鐵",
+      "region": "kansai",
+      "summary": "大阪地下鐵官方路線查詢工具的使用方式。",
+      "wiki_path": "wiki/regions/kansai.md"
+    },
+    {
+      "id": "SRC-008",
+      "original_title": "Kyoto City Bus & Subway Information Guide:Tickets",
+      "url": "https://www2.city.kyoto.lg.jp/kotsu/webguide/en/ticket/index_ticket.html",
+      "agency": "京都市交通局",
+      "region": "kansai",
+      "summary": "京都市地下鐵與市巴士票券、IC 卡適用資訊。",
+      "wiki_path": "wiki/regions/kansai.md"
+    },
+    {
+      "id": "SRC-009",
+      "original_title": "New Chitose Airport ↔︎ Sapporo ↔︎ Otaru | Travel Information | HOKKAIDO RAILWAY COMPANY",
+      "url": "https://www.jrhokkaido.co.jp/global/english/travel/airport.html",
+      "agency": "JR Hokkaido 北海道旅客鐵道",
+      "region": "hokkaido",
+      "summary": "新千歲機場、札幌與小樽的快速 Airport 服務及 IC 卡使用限制。",
+      "wiki_path": "wiki/regions/hokkaido.md"
+    },
+    {
+      "id": "SRC-010",
+      "original_title": "Fare and tickets",
+      "url": "https://www.city.sapporo.jp/st/english/fareandticket.html",
+      "agency": "札幌市交通局",
+      "region": "hokkaido",
+      "summary": "札幌市營交通票價、票券與可使用的交通 IC 卡。",
+      "wiki_path": "wiki/regions/hokkaido.md"
+    },
+    {
+      "id": "SRC-011",
+      "original_title": "別府與由布院 | 大分 | 九州 | Destinations | Travel Japan - 日本觀光局（官方網站）",
+      "url": "https://www.japan.travel/en/spot/ma_213/",
+      "agency": "JNTO 日本政府觀光局",
+      "region": "kyushu",
+      "summary": "別府與由布院的鐵路及大分機場轉乘概覽。",
+      "wiki_path": "wiki/regions/kyushu.md"
+    },
+    {
+      "id": "SRC-012",
+      "original_title": "ROUTE MAP | FUKUOKA CITYSUBWAY",
+      "url": "https://subway.city.fukuoka.lg.jp/eng/route/",
+      "agency": "福岡市地下鐵",
+      "region": "kyushu",
+      "summary": "福岡市地下鐵空港線、箱崎線及七隈線的路線資訊。",
+      "wiki_path": "wiki/regions/kyushu.md"
+    },
+    {
+      "id": "SRC-013",
+      "original_title": "Train & Monorail | Access | Haneda Airport Passenger Terminal",
+      "url": "https://www.tokyo-haneda.com/en/access/train/index.html?tab=terminal3",
+      "agency": "日本機場航廈株式會社／羽田機場",
+      "region": "kanto",
+      "summary": "羽田機場京急線與東京單軌電車連結及各航廈進站位置。",
+      "wiki_path": "wiki/regions/kanto.md"
+    },
+    {
+      "id": "SRC-014",
+      "original_title": "奈良市及週邊地區 | 奈良 | 關西 | Destinations | Travel Japan - 日本觀光局（官方網站）",
+      "url": "https://www.japan.travel/en/spot/ma_151/",
+      "agency": "JNTO 日本政府觀光局",
+      "region": "kansai",
+      "summary": "奈良從大阪及京都乘鐵路抵達的方式，包含近鐵選項。",
+      "wiki_path": "wiki/regions/kansai.md"
+    }
+  ]
+}
