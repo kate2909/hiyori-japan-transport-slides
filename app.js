@@ -6,6 +6,7 @@ const slideTitle = document.getElementById('slide-title');
 const progressBar = document.getElementById('progress-bar');
 const panel = document.getElementById('sources-panel');
 const toggle = document.getElementById('sources-toggle');
+const footerToggle = document.getElementById('footer-sources');
 const close = document.getElementById('sources-close');
 const scrim = document.getElementById('scrim');
 let index = 0;
@@ -21,17 +22,18 @@ function sourceLink(source) {
   const item = document.createElement('article');
   item.className = 'source-item';
   const id = document.createElement('strong');
-  id.textContent = source.id + ' · ' + source.agency;
+  id.textContent = source.id;
+  const agency = document.createElement('p');
+  agency.className = 'source-agency';
+  agency.textContent = '機構：' + source.agency;
   const heading = document.createElement('h3');
   heading.textContent = source.original_title;
-  const desc = document.createElement('p');
-  desc.textContent = source.summary;
   const link = document.createElement('a');
   link.href = source.url;
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
-  link.textContent = '查看官方原始頁面';
-  item.append(id, heading, desc, link);
+  link.textContent = source.url;
+  item.append(id, heading, agency, link);
   return item;
 }
 
@@ -67,14 +69,10 @@ function renderSources() {
 function renderAllSources() {
   const container = document.getElementById('all-sources');
   container.replaceChildren();
-  catalog.forEach(source => {
-    const link = document.createElement('a');
-    link.href = source.url;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.textContent = source.id + ' · ' + source.agency;
-    container.append(link);
-  });
+  const heading = document.createElement('h3');
+  heading.textContent = '完整參考資料（依來源 ID）';
+  container.append(heading);
+  catalog.forEach(source => container.append(sourceLink(source)));
 }
 
 function showSlide(newIndex, updateHash = true) {
@@ -99,6 +97,7 @@ function openSources() {
   panel.classList.add('open');
   panel.setAttribute('aria-hidden', 'false');
   toggle.setAttribute('aria-expanded', 'true');
+  footerToggle.setAttribute('aria-expanded', 'true');
   scrim.hidden = false;
   close.focus();
 }
@@ -107,6 +106,7 @@ function closeSources() {
   panel.classList.remove('open');
   panel.setAttribute('aria-hidden', 'true');
   toggle.setAttribute('aria-expanded', 'false');
+  footerToggle.setAttribute('aria-expanded', 'false');
   scrim.hidden = true;
   if (lastFocus) lastFocus.focus();
 }
@@ -115,6 +115,7 @@ prev.addEventListener('click', () => showSlide(index - 1));
 next.addEventListener('click', () => showSlide(index + 1));
 document.querySelectorAll('.next-trigger').forEach(button => button.addEventListener('click', () => showSlide(index + 1)));
 toggle.addEventListener('click', openSources);
+footerToggle.addEventListener('click', openSources);
 close.addEventListener('click', closeSources);
 scrim.addEventListener('click', closeSources);
 window.addEventListener('hashchange', () => showSlide(pageFromHash(), false));
@@ -129,8 +130,8 @@ document.querySelectorAll('[data-answer]').forEach(button => button.addEventList
   document.querySelectorAll('[data-answer]').forEach(choice => choice.classList.remove('selected', 'wrong'));
   button.classList.add(correct ? 'selected' : 'wrong');
   document.getElementById('quiz-feedback').textContent = correct
-    ? '答對了！JR 北海道明示，小樽往余市、俱知安、新雪谷方向不能繼續使用 Suica 等 IC 卡。[SRC-009]'
-    : '再想想：IC 卡有適用範圍。小樽以西的這些方向需先確認並購票。[SRC-009]';
+    ? '答對了！JR 北海道明示，小樽往余市、俱知安、新雪谷方向不能繼續使用 Suica 等 IC 卡。'
+    : '再想想：IC 卡有適用範圍。小樽以西的這些方向需先確認並購票。';
 }));
 
 showSlide(pageFromHash(), false);
